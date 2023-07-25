@@ -8,7 +8,7 @@ export default function Paginado({
   handleLastPage,
 }) {
   return (
-    <div>
+    <div className="flex justify-center">
       <button onClick={handleFirstPage}>IR A LA PRIMER PÁGINA</button>
       <button onClick={handlePrevPage} disabled={currentPage === 1}>
         Anterior

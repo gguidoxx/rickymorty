@@ -1,5 +1,5 @@
 import { Cards } from "./cards";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Paginado from "./Paginado";
 import useFetchCharacters from "../customHooks/useFetchCharacters";
 
@@ -19,7 +19,6 @@ function MainPage() {
   const handleFirstPage = () => {
     setCurrentPage(1);
   };
- 
 
   if (loading) {
     return <div>Loading...</div>;

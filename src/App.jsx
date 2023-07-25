@@ -1,4 +1,4 @@
-import MainPage from "./components/mainPage";
+import MainPage from "./components/mainPage.jsx";
 import "./index.css";
 
 function App() {
