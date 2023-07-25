@@ -1,4 +1,4 @@
-import { Cards } from "./cards";
+import { Cards } from "./Cards";
 import React, { useState } from "react";
 import Paginado from "./Paginado";
 import useFetchCharacters from "../customHooks/useFetchCharacters";
