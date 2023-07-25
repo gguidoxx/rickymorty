@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Paginado from "./Paginado";
 import useFetchCharacters from "../customHooks/useFetchCharacters";
 
-function MainPage() {
+export default function MainPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const { characters, loading, error } = useFetchCharacters(currentPage);
 
@@ -58,5 +58,3 @@ function MainPage() {
     </>
   );
 }
-
-export default MainPage;
