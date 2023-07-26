@@ -5,7 +5,6 @@ export default function Paginado({
   currentPage,
   handleNextPage,
   handleFirstPage,
-  handleLastPage,
 }) {
   return (
     <div className="grid justify-center items-center grid-cols-3 grid-rows-2 gap-0">
@@ -20,7 +19,9 @@ export default function Paginado({
         Anterior
       </button>
       <span> Página {currentPage}</span>
-      <button onClick={handleNextPage}>Siguiente</button>
+      <button onClick={handleNextPage} disabled={currentPage === 42}>
+        Siguiente
+      </button>
     </div>
   );
 }

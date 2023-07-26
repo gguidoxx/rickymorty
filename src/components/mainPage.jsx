@@ -1,7 +1,8 @@
-import {Cards} from "./Cards";
+import { Cards } from "./Cards";
 import React, { useState } from "react";
 import Paginado from "./Paginado";
 import useFetchCharacters from "../customHooks/useFetchCharacters";
+import { Loader } from "./loader";
 
 export function MainPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +22,7 @@ export function MainPage() {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   if (error) {
